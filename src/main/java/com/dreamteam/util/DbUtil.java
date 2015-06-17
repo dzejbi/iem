@@ -20,9 +20,9 @@ public class DbUtil {
 				//InputStream inputStream = DbUtil.class.getClassLoader().getResourceAsStream("/db.properties");
 				//prop.load(inputStream);
 				String driver = "com.mysql.jdbc.Driver"; //prop.getProperty("driver");
-				String url = "jdbc:mysql://127.4.87.2:3306/dream"; //prop.getProperty("url");
-				String user = "adminVEinxn4"; //prop.getProperty("user");
-				String password = "1gvH78lK5TFa"; //prop.getProperty("password");
+				String url = "jdbc:mysql://127.10.178.130:3306/beincrediblebig"; //prop.getProperty("url");
+				String user = "adminWNNpGKx"; //prop.getProperty("user");
+				String password = "NtNqCzgH-ibl"; //prop.getProperty("password");
 				Class.forName(driver);
 				connection = DriverManager.getConnection(url, user, password);
 			} catch (ClassNotFoundException e) {
