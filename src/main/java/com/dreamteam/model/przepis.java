@@ -2,7 +2,6 @@ package com.dreamteam.model;
 public class przepis {
 	
 	private long id_przepis;
-	
 	private String nazwa;
 	private String opis;
 	private int ocena;

@@ -2,7 +2,6 @@ package com.dreamteam.model;
 public class przepis_skladnik {
 	
 	private long id_przepis_skladnik;
-
 	private int id_przepis;
 	private int id_skladnik;
 	private int ilosc;

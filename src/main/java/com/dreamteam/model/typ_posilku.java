@@ -2,7 +2,6 @@ package com.dreamteam.model;
 public class typ_posilku {
 
 	private long id_typ_posilku;
-	
 	private String nazwa;
 	
 	public long getId_typ_posilku() {

@@ -2,7 +2,6 @@ package com.dreamteam.model;
 public class uzytkownik {
 
 	private long id_uzytkownik;
-	
 	private int isAdmin;
 	private String haslo;
 	private String email;

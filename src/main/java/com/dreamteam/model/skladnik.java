@@ -2,7 +2,6 @@ package com.dreamteam.model;
 public class skladnik {
 
 	private long id_skladnik;
-	
 	private String nazwa;
 	
 	public long getId_skladnik() {
