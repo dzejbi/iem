@@ -7,7 +7,7 @@
 </head>
 <body>
 
-Zmiana dla maćka
+Zmiana dla maćka ąłóź
 <p><a href="UserController?action=insert">Add User</a></p>
 
 </body>
