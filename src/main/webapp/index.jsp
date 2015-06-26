@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-Zmiana dla maÄ‡ka Ä…Å‚Ã³Åº
+Zmiana dla maæka ±³ó¼
 <p><a href="UserController?action=insert">Add User</a></p>
 
 </body>
