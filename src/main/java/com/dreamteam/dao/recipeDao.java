@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import com.dreamteam.model.Przepisdsada;
+import com.dreamteam.model.Recipe;
 import com.dreamteam.util.DbUtil;
 /**
  * chuj, dupa, kurwa, cipa
@@ -19,7 +19,7 @@ public class recipeDao {
         connection = DbUtil.getConnection();
     }
 
-    public void addUser(Przepisdsada przepis) {
+    public void addRecipe(Recipe przepis) {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("insert into przepis (id_przepis,nazwa,opis,ocena, typ, zdjecie) values (?, ?, ?, ?, ?, ? )");
             // Parameters start with 1
@@ -48,7 +48,7 @@ public class recipeDao {
         }
     }
 
-    public void updateRecipe(Przepisdsada przepis) {
+    public void updateRecipe(Recipe przepis) {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("update przepis set id_przepis=? ,nazwa=? , " +
                     "opis=? ,ocena=? , typ=?, zdjecie=?" + "where userid=?");
@@ -66,12 +66,12 @@ public class recipeDao {
         }
     }
 
-    public List<Przepisdsada> getAllRecipes() {
-        List<Przepisdsada> recipes = new ArrayList<Przepisdsada>();
+    public List<Recipe> getAllRecipes() {
+        List<Recipe> recipes = new ArrayList<Recipe>();
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("select * from przepis");
-            Przepisdsada przepis = new Przepisdsada();
+            Recipe przepis = new Recipe();
             while (rs.next()) {
                 przepis.setId_przepis(rs.getLong("przepis_id"));
                 przepis.setNazwa(rs.getString("nazwa"));
@@ -88,8 +88,8 @@ public class recipeDao {
         return recipes;
     }
 
-    public Przepisdsada getUserById(int przepisId) {
-        Przepisdsada przepis = new Przepisdsada();
+    public Recipe getUserById(int przepisId) {
+        Recipe przepis = new Recipe();
         try {
             PreparedStatement preparedStatement = connection.
                     prepareStatement("select * from users where userid=?");
