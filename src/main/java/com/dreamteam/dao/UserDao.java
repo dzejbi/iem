@@ -16,7 +16,7 @@ public class UserDao {
 	public void addUser() {
 		try {
 			PreparedStatement preparedStatement = connection
-					.prepareStatement("INSERT INTO uzytkownik (id_uzytkownik, isAdmin, haslo, email) VALUES (NULL, 1, 'haslo', 'email');");
+					.prepareStatement("INSERT INTO uzytkownik (id_uzytkownik, isAdmin, haslo, email) VALUES (NULL, 1, 'michał', 'email');");
 			preparedStatement.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
