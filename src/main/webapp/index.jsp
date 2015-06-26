@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h3>Tak tak</h3>
+<h3>Zmiana dla maćka</h3>
 <p><a href="UserController?action=insert">Add User</a></p>
 
 </body>
